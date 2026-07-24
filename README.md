@@ -9,29 +9,29 @@
 
 ## 快速开始
 
+### Windows 用户（推荐）
+
+1. 下载并安装 [Node.js](https://nodejs.org)（20 LTS 版本）
+2. 下载本项目代码并解压，或克隆仓库：
+   ```powershell
+   git clone https://github.com/pengjizhang/co-reading.git
+   ```
+3. 双击 **`一键安装.bat`**，等待自动完成
+4. 双击 **`启动协同读书.bat`**，浏览器访问 http://localhost:3030
+
+> **关闭服务**：双击 `关闭协同读书.bat` 或直接 Ctrl+C 终止控制台。
+
+### 手动安装（Mac / Linux / 终端用户）
+
 ```powershell
-# 1. 克隆仓库
 git clone https://github.com/pengjizhang/co-reading.git
 cd co-reading
-
-# 2. 安装后端依赖
 npm install
-
-# 3. 安装前端依赖并构建
-cd client
-npm install
-npm run build
-cd ..
-
-# 4. 启动服务
+cd client && npm install && npm run build && cd ..
 npm start
 ```
 
 浏览器访问 **http://localhost:3030** 即可开始阅读。
-
-> **Windows 用户**：也可以双击 `启动协同读书.bat`（有控制台窗口）或 `启动协同读书 (无弹窗版).vbs`（后台静默启动）。
->
-> **关闭服务**：双击 `关闭协同读书.bat` 或直接 Ctrl+C 终止控制台。
 
 ## 使用指南
 
