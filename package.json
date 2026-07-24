@@ -1,0 +1,31 @@
+{
+  "name": "co-reading-server",
+  "version": "1.0.0",
+  "description": "Collaborative Reading Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "check": "node scripts/regression-check.js",
+    "check:iteration7": "node scripts/iteration7-check.js",
+    "check:toc": "node scripts/otn-toc-check.js",
+    "check:iteration8": "node scripts/iteration8-check.js",
+    "check:workagent": "node scripts/workagent-collaboration-check.js",
+    "check:selection-ask": "node scripts/selection-ask-check.js",
+    "check:iteration9": "npm --prefix client run check:iteration9",
+    "check:iteration9-long": "npm --prefix client run check:iteration9-long",
+    "check:iteration9-zoom": "npm --prefix client run check:iteration9-zoom"
+  },
+  "dependencies": {
+    "adm-zip": "^0.6.0",
+    "better-sqlite3": "^11.8.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mammoth": "^1.7.2",
+    "pdf-parse": "^2.4.5",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
